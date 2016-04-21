@@ -22,21 +22,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tjr-Kr-iJP">
-                                            <rect key="frame" x="0.0" y="-17" width="134" height="164"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="134" id="7Nt-Qk-f4A"/>
-                                                <constraint firstAttribute="height" constant="164" id="MaZ-0c-t52"/>
-                                            </constraints>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsf-g9-zGW">
+                                            <rect key="frame" x="0.0" y="2" width="127" height="128"/>
                                         </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Tjr-Kr-iJP" firstAttribute="centerY" secondItem="XTg-Aw-Tf9" secondAttribute="centerY" id="uwJ-L4-jVY"/>
-                                        <constraint firstItem="Tjr-Kr-iJP" firstAttribute="leading" secondItem="XTg-Aw-Tf9" secondAttribute="leading" id="yJu-yi-Eag"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="memeImage" destination="Tjr-Kr-iJP" id="APL-4u-kiH"/>
+                                    <outlet property="memeImage" destination="xsf-g9-zGW" id="tFO-TH-fYY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -239,12 +231,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="137" height="143"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSy-Zv-LuS">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSy-Zv-LuS">
                                             <rect key="frame" x="0.0" y="-1" width="145" height="146"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="memeImage" destination="eSy-Zv-LuS" id="Qid-St-oJE"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -299,7 +294,7 @@
         <image name="table_60x60.png" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="inY-dE-jqB"/>
         <segue reference="QpG-ge-vbO"/>
+        <segue reference="inY-dE-jqB"/>
     </inferredMetricsTieBreakers>
 </document>
