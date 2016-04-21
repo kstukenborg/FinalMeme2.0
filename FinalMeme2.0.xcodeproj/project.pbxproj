@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1480C9811CC87A7800919FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9801CC87A7800919FFB /* AppDelegate.swift */; };
+		1480C9831CC87A7800919FFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9821CC87A7800919FFB /* ViewController.swift */; };
+		1480C9881CC87A7800919FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9871CC87A7800919FFB /* Assets.xcassets */; };
+		1480C98B1CC87A7800919FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9891CC87A7800919FFB /* LaunchScreen.storyboard */; };
+		1480C9AC1CC87B1A00919FFB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9951CC87B1A00919FFB /* Contents.json */; };
+		1480C9AD1CC87B1A00919FFB /* MemeGenerator_120 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9961CC87B1A00919FFB /* MemeGenerator_120 copy.png */; };
+		1480C9AE1CC87B1A00919FFB /* MemeGenerator_180 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9971CC87B1A00919FFB /* MemeGenerator_180 copy.png */; };
+		1480C9AF1CC87B1A00919FFB /* Camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9981CC87B1A00919FFB /* Camera-50.png */; };
+		1480C9B01CC87B1A00919FFB /* collection_30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C99A1CC87B1A00919FFB /* collection_30x30.png */; };
+		1480C9B11CC87B1A00919FFB /* collection_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C99B1CC87B1A00919FFB /* collection_60x60.png */; };
+		1480C9B21CC87B1A00919FFB /* collection_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C99C1CC87B1A00919FFB /* collection_90x90.png */; };
+		1480C9B31CC87B1A00919FFB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 1480C99D1CC87B1A00919FFB /* Contents.json */; };
+		1480C9B41CC87B1A00919FFB /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C99E1CC87B1A00919FFB /* LaunchImage.png */; };
+		1480C9B51CC87B1A00919FFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1480C99F1CC87B1A00919FFB /* Main.storyboard */; };
+		1480C9B61CC87B1A00919FFB /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9A01CC87B1A00919FFB /* Meme.swift */; };
+		1480C9B71CC87B1A00919FFB /* MemeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9A11CC87B1A00919FFB /* MemeDetailViewController.swift */; };
+		1480C9B81CC87B1A00919FFB /* MemeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9A21CC87B1A00919FFB /* MemeEditorView.swift */; };
+		1480C9B91CC87B1A00919FFB /* MemeGenerator_120 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9A31CC87B1A00919FFB /* MemeGenerator_120 copy.png */; };
+		1480C9BA1CC87B1A00919FFB /* SentMemesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9A41CC87B1A00919FFB /* SentMemesTableViewController.swift */; };
+		1480C9BB1CC87B1A00919FFB /* SentMemesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9A51CC87B1A00919FFB /* SentMemesViewCell.swift */; };
+		1480C9BC1CC87B1A00919FFB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9A71CC87B1A00919FFB /* Contents.json */; };
+		1480C9BD1CC87B1A00919FFB /* table_30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9A81CC87B1A00919FFB /* table_30x30.png */; };
+		1480C9BE1CC87B1A00919FFB /* table_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9A91CC87B1A00919FFB /* table_60x60.png */; };
+		1480C9BF1CC87B1A00919FFB /* table_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 1480C9AA1CC87B1A00919FFB /* table_90x90.png */; };
+		1480C9C01CC87B1A00919FFB /* ViewCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9AB1CC87B1A00919FFB /* ViewCellTable.swift */; };
+		1480C9C21CC87BFB00919FFB /* SentMemesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480C9C11CC87BFB00919FFB /* SentMemesCollectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1480C97D1CC87A7800919FFB /* FinalMeme2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalMeme2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1480C9801CC87A7800919FFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1480C9821CC87A7800919FFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1480C9871CC87A7800919FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1480C98A1CC87A7800919FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1480C98C1CC87A7800919FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1480C9951CC87B1A00919FFB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		1480C9961CC87B1A00919FFB /* MemeGenerator_120 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MemeGenerator_120 copy.png"; sourceTree = "<group>"; };
+		1480C9971CC87B1A00919FFB /* MemeGenerator_180 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MemeGenerator_180 copy.png"; sourceTree = "<group>"; };
+		1480C9981CC87B1A00919FFB /* Camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Camera-50.png"; sourceTree = "<group>"; };
+		1480C99A1CC87B1A00919FFB /* collection_30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_30x30.png; sourceTree = "<group>"; };
+		1480C99B1CC87B1A00919FFB /* collection_60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_60x60.png; sourceTree = "<group>"; };
+		1480C99C1CC87B1A00919FFB /* collection_90x90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_90x90.png; sourceTree = "<group>"; };
+		1480C99D1CC87B1A00919FFB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		1480C99E1CC87B1A00919FFB /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		1480C99F1CC87B1A00919FFB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1480C9A01CC87B1A00919FFB /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		1480C9A11CC87B1A00919FFB /* MemeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeDetailViewController.swift; sourceTree = "<group>"; };
+		1480C9A21CC87B1A00919FFB /* MemeEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeEditorView.swift; sourceTree = "<group>"; };
+		1480C9A31CC87B1A00919FFB /* MemeGenerator_120 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MemeGenerator_120 copy.png"; sourceTree = "<group>"; };
+		1480C9A41CC87B1A00919FFB /* SentMemesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMemesTableViewController.swift; sourceTree = "<group>"; };
+		1480C9A51CC87B1A00919FFB /* SentMemesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMemesViewCell.swift; sourceTree = "<group>"; };
+		1480C9A71CC87B1A00919FFB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		1480C9A81CC87B1A00919FFB /* table_30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_30x30.png; sourceTree = "<group>"; };
+		1480C9A91CC87B1A00919FFB /* table_60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_60x60.png; sourceTree = "<group>"; };
+		1480C9AA1CC87B1A00919FFB /* table_90x90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_90x90.png; sourceTree = "<group>"; };
+		1480C9AB1CC87B1A00919FFB /* ViewCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCellTable.swift; sourceTree = "<group>"; };
+		1480C9C11CC87BFB00919FFB /* SentMemesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMemesCollectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1480C97A1CC87A7800919FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1480C9741CC87A7800919FFB = {
+			isa = PBXGroup;
+			children = (
+				1480C97F1CC87A7800919FFB /* FinalMeme2.0 */,
+				1480C97E1CC87A7800919FFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1480C97E1CC87A7800919FFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1480C97D1CC87A7800919FFB /* FinalMeme2.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1480C97F1CC87A7800919FFB /* FinalMeme2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1480C9C11CC87BFB00919FFB /* SentMemesCollectionViewController.swift */,
+				1480C9941CC87B1A00919FFB /* AppIcon.appiconset */,
+				1480C9981CC87B1A00919FFB /* Camera-50.png */,
+				1480C9991CC87B1A00919FFB /* collection.imageset */,
+				1480C99E1CC87B1A00919FFB /* LaunchImage.png */,
+				1480C99F1CC87B1A00919FFB /* Main.storyboard */,
+				1480C9A01CC87B1A00919FFB /* Meme.swift */,
+				1480C9A11CC87B1A00919FFB /* MemeDetailViewController.swift */,
+				1480C9A21CC87B1A00919FFB /* MemeEditorView.swift */,
+				1480C9A31CC87B1A00919FFB /* MemeGenerator_120 copy.png */,
+				1480C9A41CC87B1A00919FFB /* SentMemesTableViewController.swift */,
+				1480C9A51CC87B1A00919FFB /* SentMemesViewCell.swift */,
+				1480C9A61CC87B1A00919FFB /* table.imageset */,
+				1480C9AB1CC87B1A00919FFB /* ViewCellTable.swift */,
+				1480C9801CC87A7800919FFB /* AppDelegate.swift */,
+				1480C9821CC87A7800919FFB /* ViewController.swift */,
+				1480C9871CC87A7800919FFB /* Assets.xcassets */,
+				1480C9891CC87A7800919FFB /* LaunchScreen.storyboard */,
+				1480C98C1CC87A7800919FFB /* Info.plist */,
+			);
+			path = FinalMeme2.0;
+			sourceTree = "<group>";
+		};
+		1480C9941CC87B1A00919FFB /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				1480C9951CC87B1A00919FFB /* Contents.json */,
+				1480C9961CC87B1A00919FFB /* MemeGenerator_120 copy.png */,
+				1480C9971CC87B1A00919FFB /* MemeGenerator_180 copy.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		1480C9991CC87B1A00919FFB /* collection.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				1480C99A1CC87B1A00919FFB /* collection_30x30.png */,
+				1480C99B1CC87B1A00919FFB /* collection_60x60.png */,
+				1480C99C1CC87B1A00919FFB /* collection_90x90.png */,
+				1480C99D1CC87B1A00919FFB /* Contents.json */,
+			);
+			path = collection.imageset;
+			sourceTree = "<group>";
+		};
+		1480C9A61CC87B1A00919FFB /* table.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				1480C9A71CC87B1A00919FFB /* Contents.json */,
+				1480C9A81CC87B1A00919FFB /* table_30x30.png */,
+				1480C9A91CC87B1A00919FFB /* table_60x60.png */,
+				1480C9AA1CC87B1A00919FFB /* table_90x90.png */,
+			);
+			path = table.imageset;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1480C97C1CC87A7800919FFB /* FinalMeme2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1480C98F1CC87A7800919FFB /* Build configuration list for PBXNativeTarget "FinalMeme2.0" */;
+			buildPhases = (
+				1480C9791CC87A7800919FFB /* Sources */,
+				1480C97A1CC87A7800919FFB /* Frameworks */,
+				1480C97B1CC87A7800919FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalMeme2.0;
+			productName = FinalMeme2.0;
+			productReference = 1480C97D1CC87A7800919FFB /* FinalMeme2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1480C9751CC87A7800919FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kathleen Stukenborg";
+				TargetAttributes = {
+					1480C97C1CC87A7800919FFB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2E3NGPX8J3;
+					};
+				};
+			};
+			buildConfigurationList = 1480C9781CC87A7800919FFB /* Build configuration list for PBXProject "FinalMeme2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1480C9741CC87A7800919FFB;
+			productRefGroup = 1480C97E1CC87A7800919FFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1480C97C1CC87A7800919FFB /* FinalMeme2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1480C97B1CC87A7800919FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1480C9B11CC87B1A00919FFB /* collection_60x60.png in Resources */,
+				1480C9B01CC87B1A00919FFB /* collection_30x30.png in Resources */,
+				1480C98B1CC87A7800919FFB /* LaunchScreen.storyboard in Resources */,
+				1480C9AE1CC87B1A00919FFB /* MemeGenerator_180 copy.png in Resources */,
+				1480C9AF1CC87B1A00919FFB /* Camera-50.png in Resources */,
+				1480C9BC1CC87B1A00919FFB /* Contents.json in Resources */,
+				1480C9AD1CC87B1A00919FFB /* MemeGenerator_120 copy.png in Resources */,
+				1480C9BD1CC87B1A00919FFB /* table_30x30.png in Resources */,
+				1480C9881CC87A7800919FFB /* Assets.xcassets in Resources */,
+				1480C9B91CC87B1A00919FFB /* MemeGenerator_120 copy.png in Resources */,
+				1480C9B51CC87B1A00919FFB /* Main.storyboard in Resources */,
+				1480C9B41CC87B1A00919FFB /* LaunchImage.png in Resources */,
+				1480C9BF1CC87B1A00919FFB /* table_90x90.png in Resources */,
+				1480C9B21CC87B1A00919FFB /* collection_90x90.png in Resources */,
+				1480C9BE1CC87B1A00919FFB /* table_60x60.png in Resources */,
+				1480C9B31CC87B1A00919FFB /* Contents.json in Resources */,
+				1480C9AC1CC87B1A00919FFB /* Contents.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1480C9791CC87A7800919FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1480C9B61CC87B1A00919FFB /* Meme.swift in Sources */,
+				1480C9C01CC87B1A00919FFB /* ViewCellTable.swift in Sources */,
+				1480C9BA1CC87B1A00919FFB /* SentMemesTableViewController.swift in Sources */,
+				1480C9831CC87A7800919FFB /* ViewController.swift in Sources */,
+				1480C9811CC87A7800919FFB /* AppDelegate.swift in Sources */,
+				1480C9C21CC87BFB00919FFB /* SentMemesCollectionViewController.swift in Sources */,
+				1480C9B81CC87B1A00919FFB /* MemeEditorView.swift in Sources */,
+				1480C9B71CC87B1A00919FFB /* MemeDetailViewController.swift in Sources */,
+				1480C9BB1CC87B1A00919FFB /* SentMemesViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1480C9891CC87A7800919FFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1480C98A1CC87A7800919FFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1480C98D1CC87A7800919FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1480C98E1CC87A7800919FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1480C9901CC87A7800919FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FinalMeme2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stukenborg.FinalMeme2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1480C9911CC87A7800919FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FinalMeme2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stukenborg.FinalMeme2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1480C9781CC87A7800919FFB /* Build configuration list for PBXProject "FinalMeme2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1480C98D1CC87A7800919FFB /* Debug */,
+				1480C98E1CC87A7800919FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1480C98F1CC87A7800919FFB /* Build configuration list for PBXNativeTarget "FinalMeme2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1480C9901CC87A7800919FFB /* Debug */,
+				1480C9911CC87A7800919FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1480C9751CC87A7800919FFB /* Project object */;
+}
