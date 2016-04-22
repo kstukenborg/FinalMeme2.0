@@ -13,7 +13,7 @@ import UIKit
 class SentMemesTableViewController: UITableViewController {
     
    
-   
+   // @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     var memes: [Meme]{
         return (UIApplication.sharedApplication().delegate as! AppDelegate).memes
 
@@ -25,11 +25,20 @@ class SentMemesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       // let space: CGFloat = 2.0
+       // let dimension = (self.view.frame.size.width - (2*space)) / 3.0
+        //make height the same as dimentsion so a square will be shown.
+        //let height = (self.view.frame.size.width - ( 2 * space)) / 3.0
+       // flowLayout.minimumInteritemSpacing = space
+       // flowLayout.minimumLineSpacing = space
+       // flowLayout.itemSize = CGSizeMake(dimension, height)
+
     }
     override func viewDidAppear(animated: Bool) {
             tabBarController?.tabBar.hidden = false
             navigationController?.navigationBarHidden = false
             tableView.reloadData()
+
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,12 +47,11 @@ class SentMemesTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("ViewCellTable")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("ViewCellTable")! as! ViewCellTable
         let meme = memes[indexPath.row]
-        
-        // Set the name and image
-        cell.imageView?.image = meme.memedImage
-        cell.textLabel?.text = meme.topText + " " + meme.bottomText
+        cell.memeImage.image = meme.memedImage
+        cell.memeImage.contentMode = UIViewContentMode.ScaleAspectFill
+        cell.label.text = meme.topText + " " + meme.bottomText
         return cell
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

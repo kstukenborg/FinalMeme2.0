@@ -72,7 +72,7 @@ class MemeEditorView: UIViewController, UIImagePickerControllerDelegate, UINavig
         //navigationController?.toolbar.layer.position.y = (navigationController?.toolbar.layer.position.y)! + (tabBarController?.tabBar.bounds.height)!
         
         self.navigationController?.setToolbarHidden(false, animated: true)
-        
+       // pictureDisplayed.layer.position.y = (navigationController?.navigationBar.layer.position.y)! - (tabBarController?.tabBar.bounds.height)!
         
         dismissViewControllerAnimated(true, completion: nil)
         if didEdit {

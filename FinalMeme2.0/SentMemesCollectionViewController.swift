@@ -22,9 +22,10 @@ class SentMemesCollectionViewController : UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let space: CGFloat = 3.0
+        let space: CGFloat = 2.0
         let dimension = (self.view.frame.size.width - (2*space)) / 3.0
-        let height = (self.view.frame.size.height - ( 2 * space)) / 3.0
+       //make height the same as dimentsion so a square will be shown.
+        let height = (self.view.frame.size.width - ( 2 * space)) / 3.0
        flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
         flowLayout.itemSize = CGSizeMake(dimension, height)
@@ -37,9 +38,9 @@ class SentMemesCollectionViewController : UICollectionViewController {
         
        // let frameSize = collectionView?.frame.size
        // let shorterSide = min(frameSize!.height, frameSize!.width)
-        let dimension = (self.view.frame.size.width - ( 2 * 3.0)) / 4.0
-        let height = (self.view.frame.size.height - ( 2 * 3.0)) / 4.0
-       flowLayout.itemSize = CGSizeMake(dimension, height)
+        //let dimension = (self.view.frame.size.width - ( 2 * 3.0)) / 4.0
+        //let height = (self.view.frame.size.height - ( 2 * 3.0)) / 4.0
+       //flowLayout.itemSize = CGSizeMake(dimension, height)
 
         //Then you can set the dimensions of the cell to be, say, 1/3 or 1/4 of the shorter side minus a few points for padding. That should give you a reasonable number of cells in your view.
         collectionView?.reloadData()
@@ -56,9 +57,11 @@ class SentMemesCollectionViewController : UICollectionViewController {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SentMemesViewCell", forIndexPath: indexPath) as! SentMemesViewCell
         let meme = memes[indexPath.item]
-        let imageView = UIImageView(image: meme.memedImage)
-        imageView.contentMode = .ScaleAspectFit
-        cell.backgroundView = imageView
+        //let imageView = UIImageView(image: meme.memedImage)
+       
+        cell.memeImage.image = meme.memedImage
+        cell.memeImage.contentMode = .ScaleAspectFill
+        //cell.backgroundView = imageView
         return cell
     }
 

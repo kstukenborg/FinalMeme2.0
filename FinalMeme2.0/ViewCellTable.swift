@@ -14,4 +14,6 @@ import UIKit
 class ViewCellTable :UITableViewCell {
     
     @IBOutlet weak var memeImage: UIImageView!
+    
+    @IBOutlet weak var label: UILabel!
 }
