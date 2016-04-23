@@ -18,12 +18,17 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewCellTable" rowHeight="132" id="O6L-Ui-nwy" customClass="ViewCellTable" customModule="FinalMeme2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="414" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O6L-Ui-nwy" id="XTg-Aw-Tf9">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="O6L-Ui-nwy" id="XTg-Aw-Tf9">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="131"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xsf-g9-zGW">
                                             <rect key="frame" x="0.0" y="2" width="127" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="KWZ-P7-AVk"/>
+                                                <constraint firstAttribute="width" constant="127" id="qcX-1V-mOf"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGu-EN-YxJ">
                                             <rect key="frame" x="151" y="55" width="255" height="21"/>
@@ -33,14 +38,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="fGu-EN-YxJ" firstAttribute="leading" secondItem="xsf-g9-zGW" secondAttribute="trailing" constant="24" id="4Bb-D8-dee"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="fGu-EN-YxJ" secondAttribute="bottom" constant="47" id="7zA-EF-wJH"/>
-                                        <constraint firstItem="xsf-g9-zGW" firstAttribute="top" secondItem="XTg-Aw-Tf9" secondAttribute="topMargin" constant="-6" id="HeO-Dj-X3v"/>
-                                        <constraint firstItem="fGu-EN-YxJ" firstAttribute="top" secondItem="XTg-Aw-Tf9" secondAttribute="topMargin" constant="47" id="Ix6-hO-tWa"/>
-                                        <constraint firstItem="fGu-EN-YxJ" firstAttribute="trailing" secondItem="XTg-Aw-Tf9" secondAttribute="trailingMargin" id="KOC-Kg-Agr"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="xsf-g9-zGW" secondAttribute="trailing" constant="279" id="Nlf-tt-I2m"/>
-                                        <constraint firstItem="xsf-g9-zGW" firstAttribute="leading" secondItem="XTg-Aw-Tf9" secondAttribute="leadingMargin" constant="-8" id="Spr-Ta-jAZ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="xsf-g9-zGW" secondAttribute="bottom" constant="-7" id="q8u-Zz-QRb"/>
+                                        <constraint firstItem="xsf-g9-zGW" firstAttribute="leading" secondItem="XTg-Aw-Tf9" secondAttribute="leadingMargin" constant="-8" id="4l0-Mo-zgH"/>
+                                        <constraint firstItem="xsf-g9-zGW" firstAttribute="top" secondItem="XTg-Aw-Tf9" secondAttribute="topMargin" constant="-6" id="9R7-vt-X7K"/>
+                                        <constraint firstItem="fGu-EN-YxJ" firstAttribute="leading" secondItem="xsf-g9-zGW" secondAttribute="trailing" constant="24" id="bsC-lF-Pon"/>
+                                        <constraint firstItem="fGu-EN-YxJ" firstAttribute="trailing" secondItem="XTg-Aw-Tf9" secondAttribute="trailingMargin" id="f8b-uU-p1s"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fGu-EN-YxJ" secondAttribute="bottom" constant="47" id="fWh-83-I1a"/>
+                                        <constraint firstItem="fGu-EN-YxJ" firstAttribute="top" secondItem="XTg-Aw-Tf9" secondAttribute="topMargin" constant="47" id="hXG-Ly-13D"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -70,7 +73,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOf-Ij-l7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291" y="743"/>
+            <point key="canvasLocation" x="-275" y="702"/>
         </scene>
         <!--Meme Editor View-->
         <scene sceneID="tne-QT-ifu">
@@ -318,6 +321,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QpG-ge-vbO"/>
-        <segue reference="R66-Jt-w8l"/>
+        <segue reference="inY-dE-jqB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,29 +11,18 @@ import UIKit
 /* This class handles the sent memes that are stored in the tableView controller.
  */
 class SentMemesTableViewController: UITableViewController {
-    
-   
-   // @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
-    var memes: [Meme]{
+        var memes: [Meme]{
         return (UIApplication.sharedApplication().delegate as! AppDelegate).memes
-
-        
-    }
+        }
+    
     @IBAction func exitApplicaton(sender: AnyObject) {
                exit(0)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // let space: CGFloat = 2.0
-       // let dimension = (self.view.frame.size.width - (2*space)) / 3.0
-        //make height the same as dimentsion so a square will be shown.
-        //let height = (self.view.frame.size.width - ( 2 * space)) / 3.0
-       // flowLayout.minimumInteritemSpacing = space
-       // flowLayout.minimumLineSpacing = space
-       // flowLayout.itemSize = CGSizeMake(dimension, height)
-
-    }
+           }
+    
     override func viewDidAppear(animated: Bool) {
             tabBarController?.tabBar.hidden = false
             navigationController?.navigationBarHidden = false
@@ -50,10 +39,23 @@ class SentMemesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ViewCellTable")! as! ViewCellTable
         let meme = memes[indexPath.row]
         cell.memeImage.image = meme.memedImage
-        cell.memeImage.contentMode = UIViewContentMode.ScaleAspectFill
-        cell.label.text = meme.topText + " " + meme.bottomText
+        cell.label.text = meme.topText + "..." + meme.bottomText
         return cell
     }
+    
+   //delete a row from the meme tablefield and shared data model
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            (UIApplication.sharedApplication().delegate as! AppDelegate).memes.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    //send selected row data to the detail view controller
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
        
         let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("MemeDetailViewController") as! MemeDetailViewController
